@@ -8,7 +8,7 @@ pipeline {
 				sh "echo $PATH"
 				sh "whoami"
 				sh "kubectl get nodes"
-                                sh "kubectl deploy nginx.yaml"
+                                sh "kubectl apply -f nginx.yaml"
         
 
 			}
