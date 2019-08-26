@@ -5,6 +5,7 @@ pipeline {
 			steps {
 				sh "ip a"
 				sh "pwd"
+				sh "echo $PATH"
 				sh "whoami"
 				sh "kubectl get nodes"
                                 sh "kubectl deploy nginx.yaml"
