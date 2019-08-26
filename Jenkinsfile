@@ -4,6 +4,8 @@ pipeline {
 		stage('Clone Repo') {
 			steps {
 				sh "ip a"
+				sh "pwd"
+				sh "whoami"
 				sh "./kubectl get nodes"
                                 sh "./kubectl deploy nginx.yaml"
         
